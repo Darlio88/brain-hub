@@ -1,0 +1,50 @@
+
+
+.login-container{
+    width:100%;
+    height:100%;
+    min-height: 100vh;
+    display:grid;
+    place-items: center;
+
+}
+
+.login{
+    background:white;
+    width:50%;
+    border-radius: var(--borderRadiusSmall);
+    box-shadow: var(--boxShadow);
+}
+
+.login .upper{
+    margin:calc(var(--fontSize)*2);
+    display:grid;
+    gap:calc(var(--fontSize)/2)
+}
+
+
+
+.login form{
+    display:grid;
+    margin:calc(var(--fontSize)*2);
+    gap:var(--fontSize);
+}
+.login form >div{
+    display:grid;
+    gap:calc(var(--fontSize)/2);
+}
+
+.login input:focus{
+    background:var(--whiteLight)
+}
+
+.login label{
+    font-weight:400;
+}
+
+
+@media (max-width:756px){
+    .login{
+        width:100%;
+    }
+}

@@ -1,0 +1,59 @@
+
+
+.upload-container{
+    width: 100%;
+    height:100%;
+    min-height: 100vh;
+    display:grid;
+    place-items: center;
+}
+
+.upload{
+    background:white;
+    width:50%;
+    border-radius: var(--borderRadiusSmall);
+    box-shadow: var(--boxShadow);
+}
+
+.upload .upload-upper, .upload .uploader{
+    display:grid;
+    margin: calc(var(--fontSize)*2)
+}
+
+.upload .upload-upper{
+    gap:calc(var(--fontSize)/4);
+}
+
+.upload .uploader{
+    display:grid;
+
+}
+
+.upload .uploader > div{
+    display:grid;
+    gap:calc(var(--fontSize)/4);
+    margin:var(--fontSize) 0;
+}
+
+.upload .uploader input[type="file"]{
+    cursor: pointer;
+    border: 2px dotted var(--blueDark);
+}
+.upload .uploader input[type="file"]::before{
+    content:"/f382";
+    height:max-content;
+    width: max-content;
+  }
+
+.upload .uploader input[type="file"]::-webkit-file-upload-button{
+    visibility:hidden;
+}
+
+@media (max-width:756px){
+    .upload{
+        width:100%;
+    }
+}
+
+
+
